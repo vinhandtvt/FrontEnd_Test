@@ -1,0 +1,53 @@
+@import "~@angular/cdk/overlay-prebuilt.css";
+
+:host {
+    .dialog {
+        // width: 60vw;
+        // height: 40vh;
+        // position: relative;
+        div.mat-dialog-content {
+            img {
+                max-width: 90%;
+                height: 100%;
+            }
+        }
+        div.mat-dialog-actions {
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            background-color: red;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .dialog {
+            width: 400px;
+            height: 300px;
+            padding: 0;
+            div.mat-dialog-content {
+                margin: 0;
+                padding: 0%;
+                img {
+                    width: 400px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+    @media screen and(max-width: 576px) {
+        .dialog {
+            width: 275px;
+            height: 300px;
+            padding: 0;
+            margin: 0;
+            div.mat-dialog-content {
+                margin: 0;
+                padding: 0%;
+                img {
+                    width: 275px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+<div class="image-container" id="image-container">
+    <div class="image-item" *ngFor="let item of giphiesArray">
+        <img (click)="openDialog(this.item)" [src]="item.images.original['url']" alt="">
+        <p class="image-title">{{ item.title }}</p>
+    </div>
+
+</div>
+<div class="btn-control">
+    <button class="btn" id="btn-control" (click)="loadMore()">load more</button>
+
+</div>
